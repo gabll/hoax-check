@@ -8,15 +8,13 @@ An API key for the [retinasdk](http://www.cortical.io/resources_apikey.html) is 
 
     $ python hoax-check.py -h
 
-	usage: hoax-check.py [-h] [--w words_cutoff] [--k keywords_cutoff]
-                         [--o avoid_single_keyword]
-                         url
+	usage: hoax-check.py [-h] [--w words_cutoff] [--k keywords_cutoff] [--o no_single_keyword] url
 
 	positional arguments:
-	   url                   Document url to check for on snopes.com
+	   url                   document url to check for on snopes.com
 
 	optional arguments:
 	   -h, --help            show this help message and exit
-       --w words_cutoff      Cuts off lines with less of n words for keywords extraction (default=7)
-       --k keywords_cutoff   Consider only the first n relevant keywords (default=4)
-       --o no_single_keyword Don't search single keywords (default=True)
+       --w words_cutoff      cuts off lines with less of n words for keyword extraction (default=7)
+       --k keywords_cutoff   consider only the first n relevant keywords (default=4)
+       --o no_single_keyword don't search single keywords (default=True)
